@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="popupApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS</title>
+    <!-- <link data-require="bootstrap-css" data-semver="3.1.1" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" /> -->
+    
+    <link rel="stylesheet" href="main.css" />
+     <!-- JS -->
+    <!-- load angular, nganimate, and ui-router -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+
+    <!-- angularJS MODULE -->
+    <script src="app.js"></script>
+    
+  </head>
+
+<body>
+<div ng-controller="popUp as pop">
+<div ng-class="pop.modalClass">
+
+<div class="modal-content">
+    <button ng-click="pop.updateDisplay()">X</button>
+
+<h3>adsfdas</h3>
+
+<h3>Testing Testing Testing Testing </h3>
+<p>Blah blah blah blah blah</p>
+
+</div>
+</div>
+<button class="modal-btn" ng-class="pop.modalBtn" ng-click="pop.updateDisplay()">Take Quiz</button>
+</div>
+</body>
+
+</html>
